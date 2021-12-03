@@ -26,6 +26,8 @@ jobs:
       run: |
         sudo apt-get install python3-setuptools -y
         #git clone https://github.com/quzard/SEU_Auto_Leave.git
-        cp -r SEU_Auto_Leave/* .
+        #cp -r SEU_Auto_Leave/* .
+        sudo cp -r ./ /usr/bin/
+        sudo chmod -R 777 /usr/bin/
         pip3 install -r requirements.txt
         python3 main.py

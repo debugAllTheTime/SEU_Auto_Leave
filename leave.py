@@ -265,6 +265,7 @@ class Leave(object):
 
         if "成功" in save.text:
             print('请假成功!')
+            print(FormData)
             return '请假成功!'
         else:
             print("请假失败!")
